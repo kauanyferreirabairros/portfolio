@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+header {
+  background-color: #4B0000;
+  padding: 20px 60px;
+  text-align: right;
+}
+
+header a {
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #ffb3b3;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+.faixa {
+  height: 90px;
+  background-color: #4B0000;
+}
+
+.faixa2 {
+  margin-top: 60px;
+  background-color: #4B0000;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.faixa2 h2 {
+  color: white;
+  font-family: 'PT Serif', serif;
+  font-size: 28px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  gap: 80px;
+  background: #eee;
+}
+
+.imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imagens img {
+  width: 400px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.imagens img:hover {
+  transform: scale(1.03);
+}
+
+.texto {
+  max-width: 600px;
+}
+
+.texto h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.botao a {
+  display: block;
+  background: #5a0c0c;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.botao a:hover {
+  background: #7a0f0f;
+  transform: scale(1.03);
+}
+
+.portfolio-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+}
+
+.bloco {
+  width: 400px;
+  height: 260px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  transition: 0.3s;
+}
+
+.bloco:hover .frame {
+  background: #5a0c0c;
+  transform: scale(1.03);
+}
+
+.imagem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.bloco iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.memorial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px;
+}
+
+.memorial-img {
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.memorial-img:hover {
+  transform: scale(1.05);
+}
+
+
+.memorial-botao a {
+  display: block;
+  width: 400px; 
+  text-align: center;
+  margin: 0 auto;
+
+  background: #5a0c0c;
+  color: white;
+  padding: 18px;
+  text-decoration: none;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.memorial-botao a:hover {
+  background: #7a0f0f;
+  transform: scale(1.05);
+}
