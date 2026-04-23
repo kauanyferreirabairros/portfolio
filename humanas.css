@@ -102,3 +102,11 @@ header a {
   font-family: 'PT Serif', serif;
   font-size: 32px;
 }
+
+.atividade-img {
+  transition: 0.3s;
+}
+
+.atividade-img:hover {
+  transform: scale(1.05);
+}
