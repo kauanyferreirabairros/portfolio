@@ -1,25 +1,249 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Internet das Coisas</title>
+<html lang="pt-BR">
 
-  <link rel="stylesheet" href="internet_das_coisas.css">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internet das Coisas</title>
+
+    <link rel="stylesheet" href="internet_das_coisas.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-  <a href="index.html">Início</a>
-  <a href="materias.html">Matérias</a>
-  <a href="ppe.html">PPE</a>
-</header>
+    <header>
+        <a href="index.html">Início</a>
+        <a href="materias.html">Matérias</a>
+        <a href="ppe.html">PPE</a>
+    </header>
+
+    <section class="faixa">
+        <h1>Segundo Trimestre</h1>
+    </section>
+
+    <main class="atividades-container">
 
 
-<div class="faixa-trimestre">
-  <h1>Primeiro Trimestre</h1>
-</div>
+        <section class="atividade">
+
+            <h2 class="titulo">Acender LED.</h2>
+
+            <img src="34.jpg" class="atividade-img" alt="Acender LED">
+
+            <p class="descricao">
+                Nesta atividade, desenvolvi um circuito simples utilizando Arduino
+                UNO para realizar o acionamento de um LED. O objetivo foi
+                compreender como realizar a ligação dos componentes eletrônicos e
+                entender como o Arduino pode controlar uma saída digital.
+                Com essa atividade, aprendi os conceitos básicos de montagem em
+                protoboard e o funcionamento de um LED em um circuito eletrônico.
+            </p>
+
+            <img src="35.jpg" class="atividade-img foto-prototipo" alt="Protótipo Acender LED">
+
+            <p class="descricao2">
+                <strong class="destaque">Protótipo da montagem física:</strong>
+                A montagem foi realizada em uma protoboard utilizando Arduino UNO,
+                LED e resistor. O LED foi conectado a uma porta digital do Arduino
+                para que pudesse ser acionado.
+            </p>
+
+            <p class="descricao2">
+                <strong class="destaque">Código:</strong>
+                Não consta código específico para esta aplicação.
+            </p>
+
+            <p class="descricao2">
+                <strong class="destaque">Justificativa:</strong>
+                A atividade foi importante para compreender os conceitos básicos
+                de eletrônica e programação com Arduino, servindo como introdução
+                ao desenvolvimento de projetos de Internet das Coisas.
+                 </p>
+
+               <p class="descricao2">
+      <strong class="destaque">H01</strong> - Reconhecer especificações técnicas e paradigmas de IoT
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H02</strong> - Integrar dispositivos para coleta automática de dados
+    </p>
+  <strong class="destaque">H03</strong> - Integrar dispositivos de comunicação de dados
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H04</strong> - Reconhecer especificações de sensoriamento e
+parametrização
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H05</strong> - Integrar projeto orientado a sensoriamento e controle.
+parametrização
+    </p>
+
+  </div>
+
+        </section>
+
+
+
+        <section class="atividade">
+
+            <h2 class="titulo">Semáforo.</h2>
+
+            <img src="36.jpg" class="atividade-img" alt="Semáforo">
+
+            <p class="descricao">
+                Nesta atividade, desenvolvi um protótipo de semáforo utilizando
+                Arduino UNO e LEDs. O objetivo foi compreender como diferentes
+                componentes eletrônicos podem ser controlados por meio da
+                programação. A atividade permitiu relacionar a montagem física
+                com a lógica de programação e o funcionamento de sistemas
+                automatizados presentes no cotidiano.
+            </p>
+
+            <img src="37.jpg" class="atividade-img foto-prototipo" alt="Protótipo Semáforo">
+
+            <p class="descricao2">
+                <strong class="destaque">Protótipo da montagem física:</strong>
+                A montagem foi realizada em uma protoboard utilizando LEDs para
+                representar as diferentes sinalizações do semáforo. Os componentes
+                foram conectados às portas digitais do Arduino para realizar os
+                testes de funcionamento.
+            </p>
+
+            <p class="descricao2">
+                <strong class="destaque">Código:</strong>
+            </p>
+
+            <pre><code>// controlando o pino através de uma variável
+
+int pino = 10;
+
+void setup() {
+    pinMode(pino, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(pino, HIGH);
+}</code></pre>
+
+            <p class="descricao2">
+                <strong class="destaque">Justificativa:</strong>
+                A atividade permitiu aplicar conhecimentos de programação e
+                eletrônica em uma situação prática, demonstrando como um sistema
+                automatizado pode controlar componentes eletrônicos por meio de
+                comandos programados.
+            </p>
+
+              </p>
+
+                     <p class="descricao2">
+      <strong class="destaque">H01</strong> - Reconhecer especificações técnicas e paradigmas de IoT
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H02</strong> - Integrar dispositivos para coleta automática de dados
+    </p>
+  <strong class="destaque">H03</strong> - Integrar dispositivos de comunicação de dados
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H04</strong> - Reconhecer especificações de sensoriamento e
+parametrização
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H05</strong> - Integrar projeto orientado a sensoriamento e controle.
+parametrização
+    </p>
+
+  </div>
+
+        </section>
+
+
+
+        <section class="atividade">
+
+            <h2 class="titulo">
+                Controle de LED com Botão — Desafio Lógica Toggle.
+            </h2>
+
+            <img src="38.jpg" class="atividade-img" alt="Controle de LED com botão">
+
+            <p class="descricao">
+                Nesta atividade, desenvolvi um circuito utilizando Arduino UNO
+                para trabalhar com o controle de um LED por meio de um botão.
+                O objetivo foi compreender a relação entre entradas e saídas
+                digitais e praticar a lógica utilizada para controlar um
+                componente eletrônico.
+            </p>
+
+            <img src="39.jpg" class="atividade-img foto-prototipo" alt="Protótipo Controle de LED">
+
+            <p class="descricao2">
+                <strong class="destaque">Protótipo da montagem física:</strong>
+                A montagem foi realizada utilizando Arduino UNO, protoboard,
+                LED, resistor e botão. Os componentes foram conectados às portas
+                do Arduino para realizar os testes de acionamento do circuito.
+            </p>
+
+            <p class="descricao2">
+                <strong class="destaque">Código:</strong>
+            </p>
+
+            <pre><code>// C++ code
+
+void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1000);
+
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(1000);
+}</code></pre>
+
+            <p class="descricao2">
+                <strong class="destaque">Justificativa:</strong>
+                O desafio foi realizado para desenvolver a compreensão sobre
+                o controle de saídas digitais e a utilização de comandos de
+                programação para determinar o comportamento de um componente
+                eletrônico.
+            </p>
+
+                      <p class="descricao2">
+      <strong class="destaque">H01</strong> - Reconhecer especificações técnicas e paradigmas de IoT
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H02</strong> - Integrar dispositivos para coleta automática de dados
+    </p>
+  <strong class="destaque">H03</strong> - Integrar dispositivos de comunicação de dados
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H04</strong> - Reconhecer especificações de sensoriamento e
+parametrização
+    </p>
+
+    <p class="descricao2">
+      <strong class="destaque">H05</strong> - Integrar projeto orientado a sensoriamento e controle.
+parametrização
+    </p>
+
+  </div>
+
+        </section>
+
+
+  
 
 </body>
+
 </html>
