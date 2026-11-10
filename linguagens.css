@@ -141,3 +141,35 @@ header a:hover {
 .faixa, .faixa2 {
   animation: fadeUp 1s ease;
 }
+
+.redacoes-imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.redacoes-imagens img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.faixa h2,
+.faixa2 h2 {
+    color: #ffffff !important;
+}
+
+.faixa h2,
+.faixa2 h2 {
+    font-family: "PT Serif", Georgia, serif !important;
+    font-size: 26px !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    margin: 0 !important;
+    text-align: center;
+}
