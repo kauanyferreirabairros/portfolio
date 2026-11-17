@@ -1,126 +1,239 @@
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: #f5f5f5;
-  font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 0.8s ease;
 }
 
+/* MENU */
 header {
-  background-color: #4B0000;
-  padding: 20px 60px;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  animation: fadeDown 0.8s ease;
+    width: 100%;
+    background-color: #4B0000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: fadeDown 0.8s ease;
 }
 
 header a {
-  color: white;
-  margin-left: 30px;
-  text-decoration: none;
-  font-family: 'PT Serif', serif;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.3s;
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 header a:hover {
-  color: #ffb3b3;
-  transform: scale(1.05);
+    color: #ffb3b3;
+    transform: scale(1.05);
 }
 
-.faixa {
-  background-color: #4B0000;
-  text-align: center;
-  padding: 40px 0;
-  animation: fadeUp 1s ease;
-}
-
-.faixa h1 {
-  color: white;
-  font-family: 'PT Serif', serif;
-  font-size: 32px;
-}
-
-.atividades-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 200px;
-  padding: 60px;
-}
-
-.atividade {
-  width: 45%;
-  max-width: 600px;
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.atividade-img {
-  width: 100%;
-  height: 220px;
-  object-fit: contain;
-
-  background: #5a0c0c;
-  border-radius: 10px;
-  padding: 10px;
-
-  margin-bottom: 20px;
-  transition: 0.3s;
-}
-
-.atividade-img:hover {
-  transform: scale(1.05);
-}
-
-.titulo {
-  color: #5a0c0c;
-  font-family: 'PT Serif', serif;
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  transition: 0.3s;
-}
-
-.titulo:hover {
-  transform: translateX(5px);
-}
-
-.descricao {
-  font-size: 17px;
-  line-height: 1.5;
-}
-
-.descricao2 {
-  font-size: 17px;
-  margin-top: 8px;
-}
-
-.destaque {
-  color: #5a0c0c;
-  font-weight: bold;
+/* FAIXAS DOS TRIMESTRES */
+.faixa,
+.faixa2 {
+    width: 100%;
+    background-color: #4B0000;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeUp 1s ease;
 }
 
 .faixa2 {
-  background-color: #4B0000;
-  text-align: center;
-  padding: 40px 0;
-  margin-top: 60px;
-  animation: fadeUp 1s ease;
+    margin-top: 60px;
 }
 
+.faixa h1,
 .faixa2 h2 {
-  color: white;
-  font-family: 'PT Serif', serif;
-  font-size: 32px;
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 32px;
+    margin: 0;
 }
 
+/* CONTAINER DAS ATIVIDADES */
+.atividades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 200px;
+    padding: 60px;
+    width: 100%;
+}
 
+/* ATIVIDADE */
+.atividade {
+    width: 45%;
+    max-width: 600px;
+    animation: fadeUp 0.8s ease both;
+}
 
+/* IMAGENS */
+.atividade-img,
+.imagem-atividade img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #5a0c0c;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
 
+.atividade-img:hover,
+.imagem-atividade img:hover {
+    transform: scale(1.05);
+}
 
+/* CAIXA DA IMAGEM DO HACKATHON */
+.imagem-atividade {
+    width: 100%;
+    height: 220px;
+    background: #5a0c0c;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imagem-atividade img {
+    width: 60%;
+    height: 200px;
+    object-fit: contain;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* TÍTULOS */
+.titulo {
+    color: #5a0c0c;
+    font-family: 'PT Serif', serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.titulo:hover {
+    transform: translateX(5px);
+}
+
+/* DESCRIÇÕES */
+.descricao {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.descricao2 {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+.destaque {
+    color: #5a0c0c;
+    font-weight: bold;
+}
+
+/* LINKS */
+.link-atividade {
+    color: #5a0c0c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    overflow-wrap: anywhere;
+}
+
+.link-atividade:hover {
+    color: #7a0f0f;
+    text-decoration: underline;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    header {
+        justify-content: center;
+        padding: 15px 10px;
+    }
+
+    header a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .faixa h1,
+    .faixa2 h2 {
+        font-size: 26px;
+    }
+
+    .atividades-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .atividade {
+        width: 100%;
+    }
+
+    .atividade-img,
+    .imagem-atividade {
+        height: 200px;
+    }
+
+    .imagem-atividade img {
+        width: 80%;
+        height: 180px;
+    }
+}

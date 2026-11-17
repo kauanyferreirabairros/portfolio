@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    animation: fadeIn 0.8s ease;
+}
+
+/* MENU SUPERIOR */
+header {
+    width: 100%;
+    height: 45px;
+    background-color: #4B0000;
+    padding: 10px 30px;
+    text-align: right;
+}
+
+header nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #ffb3b3;
+}
+
+/* FAIXA DO TRIMESTRE */
+.faixa2 {
+    width: 100%;
+    background-color: #4B0000;
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeDown 1s ease;
+}
+
+.faixa2 h2 {
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* CONTAINER DAS ATIVIDADES */
+.atividades-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 200px;
+    padding: 60px;
+    width: 100%;
+}
+
+/* ATIVIDADE */
+.atividade {
+    width: 600px;
+    max-width: 100%;
+    animation: fadeUp 1s ease both;
+}
+
+.atividade h2 {
+    color: #4B0000;
+    font-family: 'PT Serif', serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* IMAGEM */
+.imagem-atividade {
+    width: 100%;
+    height: 220px;
+    background-color: #5a0c0c;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.imagem-atividade img {
+    width: 60%;
+    height: 200px;
+    object-fit: contain;
+    transition: 0.4s;
+}
+
+.imagem-atividade img:hover {
+    transform: scale(1.05);
+}
+
+/* DESCRIÇÃO */
+.atividade p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.atividade p strong {
+    color: #4B0000;
+}
+
+.atividade .materiais {
+    margin-top: 20px;
+}
+
+/* LINKS */
+.atividade a {
+    display: block;
+    color: #4B0000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.atividade a:hover {
+    color: #7a0f0f;
+    text-decoration: underline;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    header nav a {
+        margin: 0 8px;
+        font-size: 16px;
+    }
+
+    .faixa2 h2 {
+        font-size: 26px;
+    }
+
+    .atividades-container {
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .atividade {
+        width: 100%;
+    }
+
+    .imagem-atividade {
+        height: 200px;
+    }
+
+    .imagem-atividade img {
+        width: 80%;
+    }
+}
