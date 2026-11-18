@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -9,25 +10,47 @@ body {
   background: #f5f5f5;
 }
 
+/* CABEÇALHO */
 header {
   background-color: #4B0000;
-  padding: 20px 60px;
-  text-align: right;
+  width: 100%;
+  min-height: 65px;
+  padding: 15px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header a {
+header .logo {
   color: white;
-  margin-left: 30px;
+  text-decoration: none;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header nav a {
+  color: white;
   text-decoration: none;
   font-family: 'PT Serif', serif;
   font-weight: bold;
   transition: 0.3s;
 }
 
-header a:hover {
+header nav a:hover,
+header .logo:hover {
   color: #ffb3b3;
 }
 
+/* BANNER */
 .banner img {
   width: 100%;
   display: block;
@@ -51,6 +74,7 @@ header a:hover {
   font-size: 28px;
 }
 
+/* SOBRE */
 .about {
   display: flex;
   justify-content: center;
@@ -91,6 +115,7 @@ header a:hover {
   line-height: 1.6;
 }
 
+/* BOTÕES */
 .botao a {
   display: block;
   background: #5a0c0c;
@@ -108,12 +133,28 @@ header a:hover {
   transform: scale(1.03);
 }
 
+/* PORTFÓLIOS */
 .portfolio-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 30px;
   padding: 60px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio-item h3 {
+  font-family: 'PT Serif', serif;
+  color: #4B0000;
+  margin-top: 15px;
+  font-size: 20px;
 }
 
 .bloco {
@@ -152,7 +193,7 @@ header a:hover {
   border: none;
 }
 
-
+/* MEMORIAL */
 .memorial-container {
   display: flex;
   align-items: center;
@@ -171,13 +212,11 @@ header a:hover {
   transform: scale(1.05);
 }
 
-
 .memorial-botao a {
   display: block;
-  width: 400px; 
+  width: 400px;
   text-align: center;
   margin: 0 auto;
-
   background: #5a0c0c;
   color: white;
   padding: 18px;
@@ -191,4 +230,40 @@ header a:hover {
 .memorial-botao a:hover {
   background: #7a0f0f;
   transform: scale(1.05);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 700px) {
+  header {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  header nav {
+    gap: 15px;
+  }
+
+  .portfolio-section {
+    padding: 30px 15px;
+  }
+
+  .bloco {
+    max-width: 100%;
+  }
+
+  .about,
+  .memorial-container {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .imagens img {
+    max-width: 100%;
+  }
+
+  .memorial-botao a {
+    max-width: 100%;
+  }
 }
